@@ -1153,6 +1153,33 @@ li.internship_text{
 	overflow: hidden;
 	height:50vh;
 }
+.icon-container {
+	position: relative;
+	display: inline-block;
+}
+
+        .fa-coffee, .fa-hotjar {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(130%, 50%) scaleX(-1);
+			color: #E2725B;
+        }
+
+		.fa-hotjar {
+			transform: translate(50%, 20%) scaleX(-1);
+		}
+
+		.material-symbols-outlined {
+			position: absolute;
+			font-size: 50px;
+		}
+
+		.accessible{
+			font-size: 65px;
+			left: -28px;
+			top: -20px;
+		}
 
 .carousel-control-prev-icon {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
