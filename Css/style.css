@@ -46,6 +46,8 @@ body .body {
 	box-shadow: none !important;
 }
 
+
+
 /* Begin Fonts */
 body {
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
@@ -1284,3 +1286,54 @@ li.internship_text{
 	color: #333;
 	margin: 0 0 20px
 }
+
+.our-skills {
+    padding: 50px 0;
+}
+
+.skill-bar {
+    margin-bottom: 20px;
+}
+
+.progress-title h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    background-color: lightgray;
+    border: none;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    transition: width 2s ease;
+}
+
+#progress {
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	height: 70px;
+	width: 70px;
+	display: none;
+	place-items: center;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+  }
+  #progress-value {
+	display: block;
+	height: calc(100% - 15px);
+	width: calc(100% - 15px);
+	background-color: #ffffff;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	font-size: 35px;
+	color: #001a2e;
+  }
