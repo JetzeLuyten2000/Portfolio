@@ -1164,7 +1164,7 @@ li.internship_text{
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(115%, 55%) scaleX(-1);
+            transform: translate(90%, 14%) scaleX(-1);
 			color: #E2725B;
         }
 
@@ -1173,18 +1173,21 @@ li.internship_text{
 			top: 50%;
             left: 50%;
 			color: #6B6B6B;
-			transform: translate(150%, 15%) scaleX(-1);
+			transform: translate(130%, 15%) scaleX(-1);
 		}
+
+		
 
 		.material-symbols-outlined {
 			position: absolute;
 			font-size: 50px;
 		}
 
-		.accessible{
-			font-size: 65px;
-			left: -28px;
-			top: -20px;
+		.chair-icon{
+			width: 55px;
+			font-size: 10px;
+			left: -20px;
+			top: -10px;
 		}
 
 .carousel-control-prev-icon {
@@ -1365,7 +1368,7 @@ li.internship_text{
 }
 
 .steam-1 {
-    left: 10px;
+    left: 18px;
     animation-delay: 0s;
 }
 
@@ -1374,10 +1377,6 @@ li.internship_text{
     animation-delay: 0.5s;
 }
 
-.steam-3 {
-    left: 40px;
-    animation-delay: 1s;
-}
 
 @keyframes steam-rise {
     0% {
@@ -1388,7 +1387,8 @@ li.internship_text{
         opacity: 1;
     }
     100% {
-        transform: translateY(-60px) scale(1.2) rotate(-15deg); /* Schuine beweging */
+        transform: translateY(-60px) scale(0.7) rotate(-15deg); /* Schuine beweging */
         opacity: 0;
     }
 }
+
