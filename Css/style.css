@@ -1160,7 +1160,7 @@ li.internship_text{
 	display: inline-block;
 }
 
-        .fa-coffee, .fa-hotjar {
+        .fa-coffee, .fa-brands {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -1168,8 +1168,12 @@ li.internship_text{
 			color: #E2725B;
         }
 
-		.fa-hotjar {
-			transform: translate(50%, 20%) scaleX(-1);
+		.fa-mug-hot {
+			position: absolute;
+			top: 50%;
+            left: 50%;
+			color: #6B6B6B;
+			transform: translate(150%, 15%) scaleX(-1);
 		}
 
 		.material-symbols-outlined {

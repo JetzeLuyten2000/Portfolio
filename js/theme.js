@@ -18,19 +18,25 @@ let calcScrollValue = () => {
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight;
     let scrollValue = Math.round((pos * 100) / calcHeight);
+    
     if (pos > 100) {
-      scrollProgress.style.display = "grid";
+      scrollProgress.style.display = "grid"; // Show the circular progress when scrolling
     } else {
-      scrollProgress.style.display = "none";
+      scrollProgress.style.display = "none"; // Hide it when not needed
     }
+    
+    // On click, scroll back to the top
     scrollProgress.addEventListener("click", () => {
       document.documentElement.scrollTop = 0;
     });
+    
+    // Update the circular progress background
     scrollProgress.style.background = `conic-gradient(#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
-  };
+};
   
-  window.onscroll = calcScrollValue;
-  window.onload = calcScrollValue;
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
+
 
 
 
