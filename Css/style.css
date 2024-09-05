@@ -1160,11 +1160,11 @@ li.internship_text{
 	display: inline-block;
 }
 
-        .fa-coffee, .fa-brands {
+        .fa-coffee, .fa-brands, .steam {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(130%, 50%) scaleX(-1);
+            transform: translate(115%, 55%) scaleX(-1);
 			color: #E2725B;
         }
 
@@ -1341,3 +1341,54 @@ li.internship_text{
 	font-size: 35px;
 	color: #001a2e;
   }
+
+  .coffee-container {
+    position: relative;
+    display: inline-block;
+    font-size: 50px;
+}
+
+.coffee-container {
+    position: relative;
+    display: inline-block;
+    font-size: 50px;
+}
+
+.steam {
+    position: absolute;
+    width: 8px;
+    height: 20px;
+    border-radius: 50% 50% 0 0; /* Meer afgeronde vorm */
+    background: rgba(0, 0, 0, 0.5); /* Witte, transparante stoomkleur */
+    opacity: 0;
+    animation: steam-rise 3s ease-in-out infinite;
+}
+
+.steam-1 {
+    left: 10px;
+    animation-delay: 0s;
+}
+
+.steam-2 {
+    left: 25px;
+    animation-delay: 0.5s;
+}
+
+.steam-3 {
+    left: 40px;
+    animation-delay: 1s;
+}
+
+@keyframes steam-rise {
+    0% {
+        transform: translateY(0) scale(0.5) rotate(0deg); /* Begin positie */
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-60px) scale(1.2) rotate(-15deg); /* Schuine beweging */
+        opacity: 0;
+    }
+}
