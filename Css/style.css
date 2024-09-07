@@ -1274,11 +1274,6 @@ li.internship_text{
 	overflow: visible
 }
 
-.progress .progress-bar {
-	position: relative;
-	-webkit-animation: animate-positive 2s;
-	animation: animate-positive 2s
-}
 
 .progress .progress-value {
 	display: block;
@@ -1290,18 +1285,7 @@ li.internship_text{
 	right: -25px
 }
 
-.progress .progress-bar:after {
-	content: "";
-	display: inline-block;
-	width: 10px;
-	background: #fff;
-	position: absolute;
-	top: -10px;
-	bottom: -10px;
-	right: -5px;
-	z-index: 1;
-	transform: rotate(35deg)
-}
+
 
 .progress-title {
 	font-size: 16px;
