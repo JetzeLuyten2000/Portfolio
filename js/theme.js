@@ -37,7 +37,25 @@ let calcScrollValue = () => {
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
+function createParticle(x, y) {
+    const particle = document.createElement('div');
+    particle.classList.add('particle');
+    document.body.appendChild(particle);
 
+    // Place the particle at the mouse's page position
+    particle.style.left = `${x - 5}px`; // Offset to center the particle
+    particle.style.top = `${y + 15 - 5}px`; // Verplaats de particle 20px naar beneden
+
+    // Remove the particle after 1 second (after the animation)
+    setTimeout(() => {
+      particle.remove();
+    }, 1000);
+  }
+
+  // Event listener for mouse movement
+  window.addEventListener('mousemove', (e) => {
+    createParticle(e.pageX, e.pageY); // Use pageX and pageY to account for scrolling
+  });
 
 
 ////////////////////////////////////////////////////////////////////////

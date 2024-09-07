@@ -18,6 +18,7 @@ body {
 	height: 100%;
 	font-size: 14px;
 	color: #363940;
+	cursor: url("../Pictures/cursor.png"), auto;
 }
 body .body {
 	height: 100%;
@@ -1408,16 +1409,30 @@ li.internship_text{
 }
 
   
-  a:hover::after {
+a {
+	position: relative; /* Belangrijk voor positionering van het pseudo-element */
+	text-decoration: none;
+  }
+  
+  a::after {
 	content: '';
 	position: absolute;
-	width: 100%;
+	width: 0;
 	height: 2px;
 	background-color: #000;
 	left: 0;
-	bottom: -5px;
-	animation: underline 0.3s ease-in-out forwards;
+	bottom: -1px;
+	transition: width 0.3s ease-in-out;
   }
+
+  a:hover {
+	text-decoration: none;
+  }
+  
+  a:hover::after {
+	width: 100%; /* Animeert de onderlijn */
+  }
+  
   
   @keyframes underline {
 	from {
@@ -1425,5 +1440,27 @@ li.internship_text{
 	}
 	to {
 	  width: 100%;
+	}
+  }
+
+  .particle {
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background-color: rgba(173, 216, 230, 0.8); /* Lichtblauw */
+	border-radius: 50%;
+	pointer-events: none; /* Zorgt ervoor dat de deeltjes niet interactief zijn */
+	box-shadow: 0 0 10px 5px rgba(173, 216, 230, 0.8); /* Glow effect */
+	animation: fade-out 1s linear forwards;
+  }
+
+  @keyframes fade-out {
+	from {
+	  opacity: 1;
+	  transform: scale(1);
+	}
+	to {
+	  opacity: 0;
+	  transform: scale(0.5);
 	}
   }
