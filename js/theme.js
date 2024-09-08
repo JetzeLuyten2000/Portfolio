@@ -7,6 +7,7 @@ $('.page-scroll').bind('click', function(event) {
     $('html, body').stop().animate({
         scrollTop: $($anchor.attr('href')).offset().top -64
     }, 1500, 'easeInOutExpo');
+    
     event.preventDefault();
 });
 
